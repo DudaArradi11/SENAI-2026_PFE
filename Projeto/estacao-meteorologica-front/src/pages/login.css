@@ -1,0 +1,122 @@
+/* melhora a imagem no card */
+.object-fit-cover {
+    object-fit: cover;
+}
+/* Fundo geral */
+.login-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fbcfe8, #f472b6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Card principal */
+.login-card {
+  background: #ffffff;
+  width: 800px;
+  max-width: 95%;
+  display: flex;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Parte da imagem */
+.login-imagem {
+  width: 50%;
+  background: #f9a8d4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-imagem img {
+  width: 80%;
+  border-radius: 10px;
+}
+
+/* Parte do formulário */
+.login-formulario {
+  width: 50%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Título */
+.titulo {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #db2777;
+}
+
+/* Labels */
+.login-formulario label {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #be185d;
+}
+
+/* Inputs */
+.login-formulario input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1px solid #f9a8d4;
+  outline: none;
+  transition: 0.3s;
+}
+
+.botao {
+  display: block;
+  margin-top: 20px;
+  background: #ec4899;
+  color: #ffffff !important; /* 👈 força branco SEMPRE */
+  text-align: center;
+  padding: 12px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.botao:hover {
+  background: #db2777;
+  color: #ffffff !important; /* 👈 garante no hover também */
+}
+
+/* Link cadastro */
+.login-formulario a {
+  margin-top: 15px;
+  text-align: center;
+  color: #ec4899;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.login-formulario a:hover {
+  text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .login-card {
+    flex-direction: column;
+  }
+
+  .login-imagem {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .login-formulario {
+    width: 100%;
+  }
+}
+/* opcional: deixa a fonte do título mais material-like */
+h2 {
+    letter-spacing: -0.5px;
+}
